@@ -1,0 +1,25 @@
+
+.question {
+    width: 75%;
+    padding: 4rem 2.4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.info-row {
+    margin-bottom: 4rem;
+}
+
+.answer {
+    padding: 1rem 1rem;
+    width: 80%;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    background-color: rgb(167, 114, 216);
+    transition: 0.2s ease-in-out;
+}
+
+.answer:hover {
+    background-color: rgb(128, 69, 184);
+}
