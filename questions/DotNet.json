@@ -1,0 +1,75 @@
+[
+  {
+    "question": "Które polecenie pozwala na wypisanie danych na konsoli w języku c# ?",
+    "answers": [
+      "System.Console.PrintText",
+      "System.Console.WriteLine",
+      "System.Console.Text"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Jak domyślnie nazywa się główna klasa aplikacji w języku c# ?",
+    "answers": ["class Program", "class MainProgram", "class MainWindow"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Która metoda jest główną metodą startową aplikacji ?",
+    "answers": [
+      "static void Main(string[] args)",
+      "static void Start(string[] args)",
+      "static void Program(string[] args)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Co oznacza skrót CTS dla platformy .NET ?",
+    "answers": [
+      "wspólny system typów",
+      "nazwa kompilatora c#",
+      "główna biblioteka klas"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Co oznacza skrót CLR dla platformy .NET ?",
+    "answers": [
+      "zbiór dopuszczalnych typów",
+      "wspólne środowisko uruchomieniowe",
+      " wspólne biblioteki klas"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Czym charakteryzuje się kod zarządzany ?",
+    "answers": [
+      "programista samodzielnie zarządza pamięcią dla danych",
+      "środowisko uruchomieniowe aplikacji zarządza pamięcią dla danych",
+      "system operacyjny zarządza pamięcią dla danych"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Czy na platformie .NET aplikacje w językach mogą ze sobą współdzielić kod ?",
+    "answers": [
+      "tak, jeżeli spełniają warunki określone przez CLS",
+      "nie, nie ma takiej możliwości",
+      "tak, jeżeli zostały skompilowane w tym samym środowisku IDE"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Jaki jest podstawowy typ danych (z którego dziedziczą wszystkie inne) w języku c# ?",
+    "answers": ["SimpleObject", "Object", "BaseObject"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Co oznacza skrót WPF dla platformy .NET ?",
+    "answers": [
+      "Biblioteka do tworzenia aplikacji internetowych bazująca na HTML",
+      "Biblioteka do tworzenia rozbudowanych aplikacji konsolowych",
+      "Biblioteka do tworzenia aplikacji desktopowych bazująca na XAML"
+    ],
+    "correctAnswer": 0
+  }
+]
