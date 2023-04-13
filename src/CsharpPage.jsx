@@ -1,14 +1,17 @@
 import React from 'react';
 import './PrzedmiotyPage.css';
 import dupa from './images/CSharp.png'
+import { Link } from 'react-router-dom';
 
 function CsharpPage() {
   return (
     <div className="App">
       <header>
-      <div className="image-container">
+      
+      <Link className="image-container"to="/">
           <img src={dupa} alt="C#" />
-        </div>
+        </Link>
+        
         <h1 className="centered">Techonolgie .net</h1>
         <hr className="header-line" />
       </header>
