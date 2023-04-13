@@ -5,6 +5,10 @@ import Python from "./images/python.png";
 import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
+import CSharpPage from "./CsharpPage";
+import PythonPage from "./PythonPage";
+import CsharpPage from "./CsharpPage";
+
 const MainPage = () => {
   return (
     <>
@@ -14,19 +18,23 @@ const MainPage = () => {
             <img className="dotnet-img" src={CSharp} alt="CSharp" />
           </div>
           <div className="dotnet-text">Technologie .Net</div>
-          <a className="dotnet-button">Enter</a>
+          <Link className="dotnet-button" to="dotnet">
+            Enter
+          </Link>
         </div>
         <div className="python-container">
           <div className="python-image">
             <img className="python-img" src={Python} alt="Python" />
           </div>
           <div className="python-text">Przetwarzanie obrazów</div>
-          <a className="python-button">Enter</a>
+          <Link className="python-button" to="python">
+            Enter
+          </Link>
         </div>
       </div>
       <Routes>
-        <Route path="/python" element={<Home />} />
-        <Route path="/dotnet" element={<Login />} />
+        <Route path="/python" element={<PythonPage />} />
+        <Route path="/dotnet" element={<CsharpPage />} />
       </Routes>
     </>
   );
