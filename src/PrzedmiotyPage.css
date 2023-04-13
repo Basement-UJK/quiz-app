@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #52C2BD;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url("./images/bgc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    position: relative;
+  }
+  
+  .header-line {
+    width: 75%;
+    border: none;
+    border-bottom: 4px solid #404040;
+    margin: 20px 0;
+  }
+  
+  .image-container {
+    margin-right: 20px;
+    top: 50%;
+    left: 0;
+  }
+  
+  img {
+    max-width: 35%;
+    height: 35%;
+    object-fit: contain;
+  
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+    position: relative;
+    flex: 1;
+  }
+  
+  .quiz-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 75%;
+    margin: auto;
+  }
+  
+  .quiz-buttonsrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 75%;
+    margin: auto;
+  }
+  
+  .quiz-button {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .quiz-button:hover {
+    background-color: #666;
+  }
+  
+  .centered {
+    text-align: center;
+    font-size: 75px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+  }
+  .quiz-buttonfifty {
+    flex-basis: 50%;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .quiz-buttonfifty:hover {
+    background-color: #666;
+  }
+  
