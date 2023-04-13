@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainpage-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #52c2db;
+  background-image: url("./images/bgc.png");
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.dotnet-container,
+.python-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 600px;
+  user-select: none;
+}
+
+.dotnet-img {
+  width: 300px;
+  user-select: none;
+}
+.python-img {
+  margin: 50px;
+  width: 200px;
+  user-select: none;
+}
+
+.python-text,
+.dotnet-text {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+  font-size: 40px;
+}
+
+.python-button,
+.dotnet-button {
+  font-size: 30px;
+  padding: 10px 40px;
+}
+
+.python-button {
+  background-color: #3570a3;
+  color: #fdd141;
+}
+
+.dotnet-button {
+  background-color: #953dac;
+  color: white;
+}
