@@ -23,8 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0;
-    background-color: #52C2BD;
+    padding-top: 25px;
     position: relative;
   }
   
@@ -42,8 +41,8 @@ body {
   }
   
   img {
-    max-width: 25%;
-    height: 25%;
+    max-width: 35%;
+    height: 35%;
     object-fit: contain;
   
   }
@@ -54,7 +53,6 @@ body {
   
   main {
     padding: 20px;
-    background-color: #52C2BD;
     position: relative;
     flex: 1;
   }
@@ -95,6 +93,9 @@ body {
   
   .centered {
     text-align: center;
+    font-size: 75px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
   }
   .quiz-buttonfifty {
     flex-basis: 50%;
