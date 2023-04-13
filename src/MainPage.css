@@ -70,3 +70,9 @@
 .dotnet-button:hover {
   color: black;
 }
+@media (width < 800px) {
+  .mainpage-container {
+    flex-direction: column;
+    min-height: 180vh;
+  }
+}
