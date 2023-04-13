@@ -1,15 +1,35 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+
+import data from '../../../questions/DotNet.json';
 
 import './QuestionScreen.css';
 
 function QuestionScreen() {
+    const [randomQuestion, setRandomQuestion] = useState(null);
+    const [question, setQuestion] = useState("");
+    const [answers, setAnswers] = useState([]);
+
+    const generateRandom = () => {
+        if (data.length > 0) {
+            const randomIndex = Math.floor(Math.random() * data.length);
+            const randomItem = data[randomIndex];
+            setQuestion(randomItem.question);
+            setAnswers(randomItem.answers);
+        }
+    }
+
+    useEffect(() => {
+        generateRandom();
+      }, []);
+
+    
     return (
         <div className="question-container">
-            <Container>
+            <Container className="test">
                 <div className="d-flex justify-content-center">
                     <div className="question">
-                        <p>Pytanie</p>
+                        <p>{question}</p>
                     </div>
                 </div>
                 <Row className="info-row">
@@ -19,9 +39,11 @@ function QuestionScreen() {
                 </Row>
                 <hr />
                 <Row className="d-flex justify-content-center">
-                    <Col className="mx-3 px-3 py-3 answer" xl={12}>A</Col>
-                    <Col className="mx-3 px-3 py-3 answer" xl={12}>B</Col>
-                    <Col className="mx-3 px-3 py-3 answer" xl={12}>C</Col>
+                    {
+                        answers.map((e) => (
+                            <Col className="mx-3 px-3 py-3 answer" xl={12}>{e}</Col>
+                        ))
+                    }
                 </Row>
             </Container>
         </div>
