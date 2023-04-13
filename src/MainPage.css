@@ -45,6 +45,7 @@
 
 .python-button,
 .dotnet-button {
+  border-radius: 2px;
   font-size: 30px;
   padding: 10px 40px;
 }
@@ -57,4 +58,9 @@
 .dotnet-button {
   background-color: #953dac;
   color: white;
+}
+
+.python-button:hover,
+.dotnet-button:hover {
+  color: black;
 }
