@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import data from '../../../questions/DotNet.json';
@@ -6,24 +6,106 @@ import data from '../../../questions/DotNet.json';
 import './QuestionScreen.css';
 
 function QuestionScreen() {
-    const [randomQuestion, setRandomQuestion] = useState(null);
+    const [random, setRandom] = useState(null);
     const [question, setQuestion] = useState("");
     const [answers, setAnswers] = useState([]);
+    const [ex, setEx] = useState([]);
+    const [allQuestions, setAllQuestions] = useState(data[0]);
+    // const [correctAnswers, setCorrectAnswers] = useState(0);
+    const [currentCorrect, setCurrentCorrect] = useState(null);
+    const [counter, setCounter] = useState(0);
+    const [end, setEnd] = useState(false);
+    const [isCorrect, setIsCorrect] = useState(0);
+    const [isClicked, setIsClicked] = useState({});
+    const [showCorrect, setShowCorrect] = useState(false);
 
-    const generateRandom = () => {
-        if (data.length > 0) {
-            const randomIndex = Math.floor(Math.random() * data.length);
-            const randomItem = data[randomIndex];
-            setQuestion(randomItem.question);
-            setAnswers(randomItem.answers);
+
+    useEffect(() => {
+        getRandom();
+        console.log("Call");
+    }, []);
+
+    // Losowanie i przypisywanie pytanie i odpowiedzi
+    const getRandom = () => {
+        const copy = [...allQuestions];
+        const mozliwe = [];
+        console.log(mozliwe);
+
+        copy.forEach((item) => {
+            if (!ex.includes(item.id)) {
+                mozliwe.push(item);
+                console.log(item.id);
+            }
+        });
+
+
+        if (mozliwe.length > 0) {
+            if (mozliwe.length === 1) {
+                setEnd(true);
+            }
+
+            const randomIndex = Math.floor(Math.random() * mozliwe.length);
+            setRandom(randomIndex);
+
+            console.log("dl: " + mozliwe.length);
+
+            setCurrentCorrect(mozliwe[randomIndex].correctAnswer);
+            setQuestion(mozliwe[randomIndex].question);
+            setAnswers(mozliwe[randomIndex].answers);
+            setEx([...ex, mozliwe[randomIndex].id]);
+            console.log(ex);
+        }
+    }
+
+    // Zmienia counter i wywołuje useEffect
+    const increment = () => {
+        setCounter(prevCount => prevCount + 1);
+    };
+
+    // Naciśnięcie przycisku
+    const checkAnswer = (index) => {
+
+        setIsClicked((prevClicked) => {
+            return { ...prevClicked, [index]: true }
+        });
+
+        console.log("index:" + index);
+
+        if (index === currentCorrect) {
+            setIsCorrect(1);
+            setTimeout(() => {
+                setIsCorrect(0);
+                setIsClicked({});
+                increment();
+            }, "2000");
+        } else {
+            setIsClicked((prevClicked) => {
+                return { ...prevClicked, [currentCorrect]: true }
+            });
+            setIsCorrect(-1);
+            setTimeout(() => {
+                setIsCorrect(0);
+                setIsClicked({});
+                setShowCorrect(true);
+                increment();
+            }, "2000");
+            // setIsClicked({});
+            // getRandom();
         }
     }
 
     useEffect(() => {
-        generateRandom();
-      }, []);
+        if (end) {
+            alert("Koniec testu, punkty: " + counter);
+        }
 
-    
+        if (counter === 0) {
+            console.log("zaprzestań");
+        } else {
+            getRandom();
+        }
+    }, [counter])
+
     return (
         <div className="question-container">
             <Container className="test">
@@ -37,16 +119,18 @@ function QuestionScreen() {
                     <Col>1/x</Col>
                     <Col>Lab x</Col>
                 </Row>
-                <hr />
                 <Row className="d-flex justify-content-center">
                     {
-                        answers.map((e) => (
-                            <Col className="mx-3 px-3 py-3 answer" xl={12}>{e}</Col>
+                        answers.map((e, index) => (
+                            <Col key={e} className={isCorrect === 0 ? 'mx-3 px-3 py-3 answer-neutral'
+                                : isCorrect === 1 && isClicked[index] ? 'mx-3 px-3 py-3 answer-correct '
+                                    : isCorrect === -1 && isClicked[index] ? 'mx-3 px-3 py-3 answer-incorrect'
+                                        : 'mx-3 px-3 py-3 answer-neutral'} xl={12} onClick={() => checkAnswer(index)}>{e}</Col>
                         ))
                     }
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 }
 
