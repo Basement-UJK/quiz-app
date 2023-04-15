@@ -1,20 +1,23 @@
 [
   [
     {
+      "id": "q1",
       "question": "Które polecenie pozwala na wypisanie danych na konsoli w języku c# ?",
       "answers": [
         "System.Console.PrintText",
         "System.Console.WriteLine",
         "System.Console.Text"
       ],
-      "correctAnswer": 0
+      "correctAnswer": 1
     },
     {
+      "id": "q2",
       "question": "Jak domyślnie nazywa się główna klasa aplikacji w języku c# ?",
       "answers": ["class Program", "class MainProgram", "class MainWindow"],
       "correctAnswer": 0
     },
     {
+      "id": "q3",
       "question": "Która metoda jest główną metodą startową aplikacji ?",
       "answers": [
         "static void Main(string[] args)",
@@ -24,6 +27,7 @@
       "correctAnswer": 0
     },
     {
+      "id": "q4",
       "question": "Co oznacza skrót CTS dla platformy .NET ?",
       "answers": [
         "wspólny system typów",
@@ -33,6 +37,7 @@
       "correctAnswer": 0
     },
     {
+      "id": "q5",
       "question": "Co oznacza skrót CLR dla platformy .NET ?",
       "answers": [
         "zbiór dopuszczalnych typów",
@@ -42,6 +47,7 @@
       "correctAnswer": 0
     },
     {
+      "id": "q6",
       "question": "Czym charakteryzuje się kod zarządzany ?",
       "answers": [
         "programista samodzielnie zarządza pamięcią dla danych",
@@ -51,6 +57,7 @@
       "correctAnswer": 0
     },
     {
+      "id": "q7",
       "question": "Czy na platformie .NET aplikacje w językach mogą ze sobą współdzielić kod ?",
       "answers": [
         "tak, jeżeli spełniają warunki określone przez CLS",
@@ -60,11 +67,13 @@
       "correctAnswer": 0
     },
     {
+      "id": "q8",
       "question": "Jaki jest podstawowy typ danych (z którego dziedziczą wszystkie inne) w języku c# ?",
       "answers": ["SimpleObject", "Object", "BaseObject"],
       "correctAnswer": 0
     },
     {
+      "id": "q9",
       "question": "Co oznacza skrót WPF dla platformy .NET ?",
       "answers": [
         "Biblioteka do tworzenia aplikacji internetowych bazująca na HTML",
