@@ -17,7 +17,7 @@ function QuestionScreen() {
     const [end, setEnd] = useState(false);
     const [isCorrect, setIsCorrect] = useState(0);
     const [isClicked, setIsClicked] = useState({});
-    const [showCorrect, setShowCorrect] = useState(false);
+    const [zielony, setZielony] = useState({});
 
 
     useEffect(() => {
@@ -69,8 +69,13 @@ function QuestionScreen() {
             return { ...prevClicked, [index]: true }
         });
 
+        setZielony((prevState) => {
+            return { ...prevState, [index]: false }
+        });
+
         console.log("index:" + index);
 
+        // Poprawna
         if (index === currentCorrect) {
             setIsCorrect(1);
             setTimeout(() => {
@@ -78,19 +83,23 @@ function QuestionScreen() {
                 setIsClicked({});
                 increment();
             }, "2000");
+            // Niepoprawna
         } else {
             setIsClicked((prevClicked) => {
                 return { ...prevClicked, [currentCorrect]: true }
             });
+
+            setZielony((prevState) => {
+                return { ...prevState, [currentCorrect]: true }
+            });
+
             setIsCorrect(-1);
             setTimeout(() => {
                 setIsCorrect(0);
                 setIsClicked({});
-                setShowCorrect(true);
+                setZielony({});
                 increment();
             }, "2000");
-            // setIsClicked({});
-            // getRandom();
         }
     }
 
@@ -123,9 +132,10 @@ function QuestionScreen() {
                     {
                         answers.map((e, index) => (
                             <Col key={e} className={isCorrect === 0 ? 'mx-3 px-3 py-3 answer-neutral'
-                                : isCorrect === 1 && isClicked[index] ? 'mx-3 px-3 py-3 answer-correct '
-                                    : isCorrect === -1 && isClicked[index] ? 'mx-3 px-3 py-3 answer-incorrect'
-                                        : 'mx-3 px-3 py-3 answer-neutral'} xl={12} onClick={() => checkAnswer(index)}>{e}</Col>
+                                : isCorrect === 1 && isClicked[index] ? 'mx-3 px-3 py-3 answer-correct'
+                                    : isCorrect === -1 && isClicked[index] && zielony[index] ? 'mx-3 px-3 py-3 answer-correct'
+                                        : isCorrect === -1 && isClicked[index] ? 'mx-3 px-3 py-3 answer-incorrect'
+                                            : 'mx-3 px-3 py-3 answer-neutral'} xl={12} onClick={() => checkAnswer(index)}>{e}</Col>
                         ))
                     }
                 </Row>
