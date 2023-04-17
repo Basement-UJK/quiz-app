@@ -9,11 +9,11 @@ function CsharpPage() {
   return (
     <div className="App">
       <header>
-      
-      <Link className="image-container"to="/">
+
+        <Link className="image-container" to="/">
           <img src={dupa} alt="C#" />
         </Link>
-        
+
         <h1 className="centered">Techonolgie .net</h1>
         <hr className="header-line" />
       </header>
@@ -25,9 +25,8 @@ function CsharpPage() {
         </div>
         <div className="quiz-buttons">
           <Link to="/questions">
-            Lab1
+            <button className="quiz-button">Laboratorium 1</button>
           </Link>
-          <button className="quiz-button">Laboratorium 1</button>
           <button className="quiz-button">Laboratorium 2</button>
           <button className="quiz-button">Laboratorium 3</button>
           <button className="quiz-button">Laboratorium 4</button>

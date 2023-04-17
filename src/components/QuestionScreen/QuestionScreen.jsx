@@ -11,7 +11,7 @@ function QuestionScreen() {
     const [answers, setAnswers] = useState([]);
     const [ex, setEx] = useState([]);
     const [allQuestions, setAllQuestions] = useState(data[0]);
-    // const [correctAnswers, setCorrectAnswers] = useState(0);
+    const [correctAnswers, setCorrectAnswers] = useState(0);
     const [currentCorrect, setCurrentCorrect] = useState(null);
     const [counter, setCounter] = useState(0);
     const [end, setEnd] = useState(false);
@@ -81,6 +81,7 @@ function QuestionScreen() {
             setTimeout(() => {
                 setIsCorrect(0);
                 setIsClicked({});
+                setCorrectAnswers(correctAnswers + 1);
                 increment();
             }, "2000");
             // Niepoprawna
@@ -105,7 +106,7 @@ function QuestionScreen() {
 
     useEffect(() => {
         if (end) {
-            alert("Koniec testu, punkty: " + counter);
+            alert("Koniec testu, punkty: " + correctAnswers);
         }
 
         if (counter === 0) {
