@@ -137,7 +137,7 @@
       "question": "Czy jest możliwe łączenia wielu macierzy w celu otrzymania jednej złożonej operacji – wybierz ?  ",
       "answers": [
         "Nie, każda operacja musi być wykonana osobno ",
-        "Nie, każda operacja musi być wykonana osobno  ",
+        "Tak, można dowolnie łączyć operacje na macierzach   ",
         "Tak, ale tylko dla macierzy zawierających obrazy  "
       ],
       "correctAnswer": 1
