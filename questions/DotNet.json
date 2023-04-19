@@ -100,7 +100,7 @@
         "tak , można podawać dowolny krok za pomocą wartości liczbowej  ",
         "tak, można podać dowolny ale krok będący liczbą całkowitą  "
       ],
-      "correctAnswer": 1
+      "correctAnswer": 2
     },
     {
       "id": "q13",
