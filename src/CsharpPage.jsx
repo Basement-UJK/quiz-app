@@ -20,13 +20,16 @@ function CsharpPage() {
       <main className="main-background">
 
         <div className="quiz-buttonsrow">
-          <button className="quiz-buttonfifty">Kolokwium 1</button>
+        <Link to="/questions">
+  <button className="quiz-buttonfifty button-blue">Kolokwium 1</button>
+</Link>
+
           <button className="quiz-buttonfifty">Kolokwium 2</button>
         </div>
         <div className="quiz-buttons">
-          <Link to="/questions">
+
             <button className="quiz-button">Laboratorium 1</button>
-          </Link>
+
           <button className="quiz-button">Laboratorium 2</button>
           <button className="quiz-button">Laboratorium 3</button>
           <button className="quiz-button">Laboratorium 4</button>
