@@ -3,7 +3,7 @@ import './PrzedmiotyPage.css';
 import dupa from './images/CSharp.png'
 import { Link } from 'react-router-dom';
 
-// import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 function CsharpPage() {
   return (
@@ -20,8 +20,8 @@ function CsharpPage() {
       <main className="main-background">
 
         <div className="quiz-buttonsrow">
-        <Link to="/questions">
-  <button className="quiz-buttonfifty button-blue">Kolokwium 1</button>
+        <Link to="/questionsnet">
+  <button className="quiz-buttonfifty">Kolokwium 1</button>
 </Link>
 
           <button className="quiz-buttonfifty">Kolokwium 2</button>

@@ -16,7 +16,10 @@ function PythonPage() {
       <main className="main-background">
 
         <div className="quiz-buttonsrow">
-          <button className="quiz-buttonfifty">Kolokwium 1</button>
+
+        <Link to="/questionspython">
+  <button className="quiz-buttonfifty">Kolokwium 1</button>
+</Link>
           <button className="quiz-buttonfifty">Kolokwium 2</button>
         </div>
         <div className="quiz-buttons">

@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-import data from '../../../questions/DotNet.json';
+import data from '../../../questions/Python.json';
 
 import './QuestionScreen.css';
 
-function QuestionScreen() {
+function QuestionScreenDummy() {
     const [random, setRandom] = useState(null);
     const [question, setQuestion] = useState("");
     const [answers, setAnswers] = useState([]);
@@ -106,7 +106,7 @@ function QuestionScreen() {
 
     useEffect(() => {
         if (end) {
-            alert("Koniec testu, punkty: " + correctAnswers + "/39");
+            alert("Koniec testu, punkty: " + correctAnswers + "/44");
         }
 
         if (counter === 0) {
@@ -125,7 +125,7 @@ function QuestionScreen() {
                     </div>
                 </div>
                 <Row className="info-row">
-                    <Col>.NET</Col>
+                    <Col>Python</Col>
                     <Col></Col>
                     <Col>Kolokwium 1</Col>
                 </Row>
@@ -145,4 +145,4 @@ function QuestionScreen() {
     );
 }
 
-export default QuestionScreen;
+export default QuestionScreenDummy;

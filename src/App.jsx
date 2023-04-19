@@ -9,6 +9,7 @@ import MainPage from "./MainPage";
 import QuestionScreen from "./components/QuestionScreen/QuestionScreen";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import QuestionScreenDummy from "./components/QuestionScreen/QuestionScreenDummy";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/python" element={<PythonPage />} />
         <Route path="/dotnet" element={<CSharpPage />} />
-        <Route path="/questions" element={<QuestionScreen />} />
+        <Route path="/questionsnet" element={<QuestionScreen />} />
+        <Route path="/questionspython" element={<QuestionScreenDummy />} />
       </Routes>
     </div>
   );

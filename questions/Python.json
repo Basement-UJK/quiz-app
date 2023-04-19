@@ -1,6 +1,430 @@
 [
   [
     {
+      "id": "q1",
+      "question": "W jakich plikach przechowywany jest kod języka Python ? ",
+      "answers": [
+        ".py ",
+        ".pyth",
+        ".pcc"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q2",
+      "question": "Jak nazywa się program instalujący wymagane pakiety w środowisku Pythona? ",
+      "answers": ["installer ", "pip ", "pythonSetup"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q3",
+      "question": "W jaki sposób można sprawdzić pakiety zainstalowane w środowisku Pythona ? ",
+      "answers": [
+        "packages list",
+        "pip list ",
+        "python list "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q4",
+      "question": "Jak nazywa się jedna z bibliotek służąca do tworzenia aplikacji okienkowych w Pythonie ?",
+      "answers": [
+        "PythonWindowGUI ",
+        "GUIEditorLib ",
+        "PySimpleGUI "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5",
+      "question": "Czy możliwa jest zmiana rozmiaru okna i za pomocą jakiego parametru/opcji ? ",
+      "answers": [
+        "Nie, trzeba ustalić domyślny rozmiar okna na starcie aplikacj",
+        "Tak, można poprzez ustawienie atrybutu resizable=True ",
+        "Tak, poprzez podanie rozmiaru okna w parametrach aplikacji "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q6",
+      "question": "W jaki sposób jest realizowana obsługa głównych czynności wykonywanych w oknie programu ? ",
+      "answers": [
+        "Za pomocą pętli while True: w której są przechwytywane zdarzenia z komponentów ",
+        "Poprzez wbudowane mechanizmy okna i nasłuch zdarzeń z komponentów ",
+        "Za pomocą funkcji podłączonych do komponentów okna reagujących na zdarzenia  "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q7",
+      "question": "Jaki komponent jest używany do prezentacji testu/napisów w oknie w bibliotece PySimpleGUI? ",
+      "answers": [
+        "Text",
+        "Label ",
+        "Description "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q8",
+      "question": "Co to jest Python IDLE ? ",
+      "answers": ["Biblioteka Pythona służąca do tworzenia aplikacji okienkowych ", ") Edytor kodu, za pomocą którego można pisać programy ", "Powłoka i wiersz poleceń języka Python "],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q9",
+      "question": "Jaki komponent jest używany do prezentacji obrazów w oknie w bibliotece PySimpleGUI? ",
+      "answers": [
+        "Picture ",
+        "Image ",
+        "Canvas "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q10",
+      "question": "W jaki sposób identyfikowane są komponenty okna po jego utworzeniu okna w PySimpleGUI? ",
+      "answers": [
+        "Za pomocą atrybutu key",
+        "Za pomocą nazwy ",
+        "Za pomocą atrybutu id "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q11",
+      "question": "Jak nazywa się prosta biblioteka do operacji na obrazach w Python ?  ",
+      "answers": [
+        "ImagesLib ",
+        "PIL  ",
+        "PIP  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q13",
+      "question": "Jak nazywa się biblioteka do obsługi macierzy w języku Python?   ",
+      "answers": [
+        "MatrixPy ",
+        "MatLib ",
+        "NumPy "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q14",
+      "question": "Który typ obrazu przechowuje dane z użyciem 3 bajtów dla każdego piksela? ",
+      "answers": [
+        "Monochromatyczny",
+        "Kolorowy RGB",
+        "Kolorowy indeksowany "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q15",
+      "question": "Jak operacja pozwala na przesunięcie pikseli obrazu o zadaną wartość w osi X i Y ?",
+      "answers": [
+        "Skalowanie  ",
+        "Translacja  ",
+        "Pochylenie "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q16",
+      "question": "Czy jest możliwe łączenia wielu macierzy w celu otrzymania jednej złożonej operacji – wybierz ?  ",
+      "answers": [
+        "Nie, każda operacja musi być wykonana osobno ",
+        "Nie, każda operacja musi być wykonana osobno  ",
+        "Tak, ale tylko dla macierzy zawierających obrazy  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q17",
+      "question": "Jak nazywa się bibliotek języka Python do zawansowanych operacji na obrazach ?  ",
+      "answers": [
+        "PySimpleGUI ",
+        "OpenCV  ",
+        "NumPy  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q18",
+      "question": "Jakie polecenie pozwala wyświetlić obraz z użyciem OpenCV w języku Python ",
+      "answers": [
+        "cv2.printImage(…)",
+        "cv2.picture(…) ",
+        "cv2.imshow(…) "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q19",
+      "question": "Które polecenie pozwala na konwersję obrazu do innego modelu koloru ? ",
+      "answers": [
+        "cv2.transform(…) ",
+        "cv2.cvtColor(…) ",
+        "cv2.imageConv(…) "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q20",
+      "question": "W którym typie obrazów jeden piksel jest reprezentowany przez 1 bit ? ",
+      "answers": [
+        "W obrazie binarnym ",
+        "W obrazie monochromatycznym ",
+        "W obrazie kolorowym "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q21",
+      "question": "W jakim celu stosujemy przekształcenia geometryczne ?  ",
+      "answers": [
+        "W celu wyostrzenia obrazów ",
+        "W celu korekty wad systemu rejestracji obrazów ",
+        "W celu redukcji rozmiaru pliku obrazu"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q22",
+      "question": "Do czego służy biblioteka matplotlib ? ",
+      "answers": [
+        "Do obliczeń na obrazach ",
+        "Do prezentacji wykresów, obrazów itp. ",
+        "Do wykonywania operacji analizy na obrazach  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q23",
+      "question": "Na czym polegają operacje bezkontekstowe ?  ",
+      "answers": [
+        "Podczas operacji uwzględniana jest tylko wartość piksela  ",
+        "Podczas operacji uwzględniane jest otoczenie każdego piksela ",
+        "Podczas operacji uwzględniany jest cały obraz   "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q24",
+      "question": "Co powstaje w wyniku operacji progowania ?  ",
+      "answers": [
+        "Obraz kolorowy  ",
+        "Obraz binarny  ",
+        "Obraz w skali szarości  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q25",
+      "question": "Na czym polega progowanie z dolnym progiem ?   ",
+      "answers": [
+        "Wartość 1 mają piksele powyżej wartości progu   ",
+        "Wartość 1 mają piksele równe wartości progu   ",
+        "Wartość 1 mają piksele poniżej wartości progu    "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q26",
+      "question": "Do czego służy operacja progowaniu metodą Otsu ? ",
+      "answers": [
+        "Do progowania z automatycznie ustaloną wartością progu  ",
+        "Do wyznaczenia statystyki obrazu ",
+        "Do konwersji obrazu kolorowego na binarny  "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q27",
+      "question": "Na czym polega progowanie z górnym progiem ? ",
+      "answers": [
+        "Wartość 1 mają piksele powyżej wartości progu  ",
+        "Wartość 1 mają piksele równe wartości progu  ",
+        "Wartość 1 mają piksele poniżej wartości progu  "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q28",
+      "question": "Jakie polecenie pakietu matplotlib służy do utworzenia nowego okna do prezentacji wyników ? ",
+      "answers": [
+        "plt.figure(…)   ",
+        "plt.image(…)   ",
+        "plt.results(…)   "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q29",
+      "question": "Ile poziomów reprezentuje obraz w skali szarości ?   ",
+      "answers": [
+        "255 ",
+        "16  ",
+        "128 "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q30",
+      "question": "Jaki komponent biblioteki PySimpleGui reprezentuje suwak do zmiany wartości ?   ",
+      "answers": [
+        "sg.scroll(…)  ",
+        "sg.slider(…)   ",
+        "jsg.change_value(…)   "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q31",
+      "question": "Co to jest histogram obrazu ?   ",
+      "answers": [
+        "Prezentacja liczebności pikseli o określonej intensywności w obrazie   ",
+        "Zmiany intensywności w określonym kierunku  ",
+        "Wykres reprezentujący rozkład kolorów na obrazie    "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q32",
+      "question": "Na czym polega rozjaśnianie obrazu ? ",
+      "answers": [
+        "Na konwersji palety kolorów   ",
+        "Na zwiększeniu wartości intensywności każdego piksela  ",
+        "Na zmniejszeniu wartości intensywności każdego piksela   "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q33",
+      "question": "Czym charakteryzują się operacje kontekstowe ? ",
+      "answers": [
+        "Podczas przetwarzania uwzględniane jest otoczenia przetwarzanego piksela    ",
+        " Podczas przetwarzania uwzględniany jest zawsze cały obraz   ",
+        "Podczas przetwarzania nie jest uwzględniane otoczenie przetwarzanego piksela     "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q34",
+      "question": "Która funkcja realizuje operację filtra uśredniającego ? ",
+      "answers": [
+        "cv2.med(…)  ",
+        "cv2.blur(…)  ",
+        "cv2.medianBlur(…)  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q35",
+      "question": "Która funkcja realizuje operację filtra medianowego? ",
+      "answers": [
+        "cv2.blur(…)     ",
+        "cv2.medianBlur(…)   ",
+        "cv2.med(…)      "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q36",
+      "question": "Która operacja powoduje wygenerowanie nowej wartości piksela wynikowego (wskaż właściwe)?  ",
+      "answers": [
+        "Filtr uśredniający     ",
+        "Filtr medianowy    ",
+        "Filtr uśredniający i medianowy      "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q37",
+      "question": "Jak zwiększenie rozmiaru maski filtra uśredniającego wpływa na obraz po przetwarzaniu ?",
+      "answers": [
+        "Nie ma wpływu na obraz po przetwarzaniu     ",
+        "Obraz jest wygładzony mniejszym stopniu   ",
+        "Obraz jest wygładzony w większym stopniu     "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q38",
+      "question": "Co to jest konwolucja (operacja stosowana przy filtracji obrazu)?  ",
+      "answers": [
+        "Operacja sumowania dwóch obrazów    ",
+        " Operacja splotu obrazu i maski filtra    ",
+        "Operacja poprawy jakości obrazu "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q39",
+      "question": "Do czego służy metoda Sobela ? ",
+      "answers": [
+        "Do detekcji figur geometrycznych na obrazie   ",
+        "Do poprawy jakości obrazu   ",
+        "Do detekcji krawędzi  "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q40",
+      "question": "Jakie krawędzie potrafi wykryć metoda Sobela ?    ",
+      "answers": [
+        "Tylko te zgodne z maską  ",
+        "Tylko poziome   ",
+        "Tylko pionowe  "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q41",
+      "question": "Która metoda detekcji krawędzi ma większą skuteczność i uniwersalność?  ",
+      "answers": [
+        "Obie działają z taką samą skutecznością  ",
+        "Metoda Sobela   ",
+        "Metoda Canny  "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q42",
+      "question": "Jak nazywa się funkcja realizująca detekcję krawędzie metodą Canny ?  ",
+      "answers": [
+        "cv2.edgeDetection(…)  ",
+        "cv2.canny(…)   ",
+        "cv2.cannyDetection(…)  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q43",
+      "question": "Jaka jest najmniejsza, najczęściej stosowana maska filtrów w przewarzaniu obrazów ?   ",
+      "answers": [
+        "3x3 ",
+        "1x1  ",
+        "5x5 "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q44",
+      "question": "Co to jest kontekst w przypadku operacji kontekstowych (w przetwarzaniu obrazów) ?   ",
+      "answers": [
+        "Otoczenie analizowanego piksela o zadanym rozmiarze  ",
+        "Cały obraz  ",
+        "Wszystkie piksele stykające się bezpośrednio z analizowanym piksele "
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  [
+    {
       "question": "",
       "answers": [],
       "correctAnswer": 0
