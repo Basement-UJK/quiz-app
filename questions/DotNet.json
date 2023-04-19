@@ -371,6 +371,16 @@
         "muszą mieć jawnie określony typ  "
       ],
       "correctAnswer": 2
+    },
+    {
+      "id": "q40",
+      "question": "Gdzie są przechowywane obiekty tworzone po użyciu słowa kluczowego new(...) ?  ",
+      "answers": [
+        "na stosie    ",
+        "na stercie   ",
+        "w zależności od wielkości   "
+      ],
+      "correctAnswer": 1
     }
   ],
   [

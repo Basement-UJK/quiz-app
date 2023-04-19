@@ -106,7 +106,7 @@ function QuestionScreen() {
 
     useEffect(() => {
         if (end) {
-            alert("Koniec testu, punkty: " + correctAnswers + "/39");
+            alert("Koniec testu, punkty: " + correctAnswers + "/40");
         }
 
         if (counter === 0) {

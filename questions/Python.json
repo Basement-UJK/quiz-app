@@ -278,7 +278,7 @@
       "answers": [
         "sg.scroll(…)  ",
         "sg.slider(…)   ",
-        "jsg.change_value(…)   "
+        "sg.change_value(…)   "
       ],
       "correctAnswer": 1
     },
