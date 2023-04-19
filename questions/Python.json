@@ -69,7 +69,7 @@
     {
       "id": "q8",
       "question": "Co to jest Python IDLE ? ",
-      "answers": ["Biblioteka Pythona służąca do tworzenia aplikacji okienkowych ", ") Edytor kodu, za pomocą którego można pisać programy ", "Powłoka i wiersz poleceń języka Python "],
+      "answers": ["Biblioteka Pythona służąca do tworzenia aplikacji okienkowych ", "Edytor kodu, za pomocą którego można pisać programy ", "Powłoka i wiersz poleceń języka Python "],
       "correctAnswer": 1
     },
     {
