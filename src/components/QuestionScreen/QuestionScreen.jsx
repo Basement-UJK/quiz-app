@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-import data from '../../../questions/DotNet.json';
+import data from '../../../questions/DotNet2.json';
 
 import './QuestionScreen.css';
 

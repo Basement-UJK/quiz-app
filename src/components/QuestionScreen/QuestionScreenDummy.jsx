@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-import data from '../../../questions/Python.json';
+import data from '../../../questions/Python2.json';
 
 import './QuestionScreen.css';
 
@@ -106,7 +106,7 @@ function QuestionScreenDummy() {
 
     useEffect(() => {
         if (end) {
-            alert("Koniec testu, punkty: " + correctAnswers + "/44");
+            alert("Koniec testu, punkty: " + correctAnswers + "/39");
         }
 
         if (counter === 0) {
