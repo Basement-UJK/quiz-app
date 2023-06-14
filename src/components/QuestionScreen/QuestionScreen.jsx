@@ -127,7 +127,7 @@ function QuestionScreen() {
                 <Row className="info-row">
                     <Col>.NET</Col>
                     <Col></Col>
-                    <Col>Kolokwium 1</Col>
+                    <Col>Kolokwium 2</Col>
                 </Row>
                 <Row className="d-flex justify-content-center">
                     {
