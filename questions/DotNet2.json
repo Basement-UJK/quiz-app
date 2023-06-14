@@ -1,0 +1,402 @@
+[
+    {
+        "id": "q1",
+        "question": "Na czym polega mechanizm Binding?",
+        "answers": [
+            "Pozwala łączyć elementy technologii WPF z danymi",
+            "Pozwala łączyć elementy technologii WPF z plikami",
+            "Pozwala łączyć na komunikację z plikami XML"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q2",
+        "question": "Do czego służy interfejs INotifyPropertyChanged?",
+        "answers": [
+            "Umożliwia reagowanie na zmiany rozmiaru okna",
+            "Umożliwia wiązanie instancji klasy z komponentami WPF",
+            "Umożliwia wiązanie okna z komponentami WPF"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q3",
+        "question": "Jak nazywa się komponent do prezentacji prostego tekstu?",
+        "answers": [
+            "TextArea",
+            "InputText",
+            "TextBox"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q4",
+        "question": "Jak nazywa się metoda obsługująca reakcję na wciśnięcie przycisku myszy np. na przycisku button?",
+        "answers": [
+            "button_Click(...)",
+            "button_Press(...)",
+            "button_Push(...)"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q5",
+        "question": "Jak nazywa się główna sekcja reprezentująca okno w XAML?",
+        "answers": [
+            "Frame",
+            "Window",
+            "MainWindow"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q6",
+        "question": "Co to jest XAML?",
+        "answers": [
+            "Język opisu wyglądu interfejsu graficznego WPF",
+            "Język opisu danych zawartych w aplikacji w technologii WPF",
+            "Język opisu działań realizowanych przez aplikację WPF"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q7",
+        "question": "W jakim celu stosowany jest XAML?",
+        "answers": [
+            "W celu możliwości opisu wyglądu okna w postaci tekstu",
+            "W celu oddzielenia opisu wyglądu aplikacji od jej logiki",
+            "W celu przyspieszenia działania mechanizmów budowy okna"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q8",
+        "question": "Jaki interfejs muszą implementować klasy w celu obsługi wiązania WPF?",
+        "answers": [
+            "INotifyPropertyChanged",
+            "IDataChangedMessage",
+            "IWpfDataChanged"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q9",
+        "question": "Czy jest możliwa automatyczna serializacja całego grafu obiektów?",
+        "answers": [
+            "Nie, można serializować jedynie każdy element grafu osobno",
+            "Nie można serializować grafu obiektów",
+            "Tak, mechanizm serializacji automatycznie zapisuje cały graf obiektów"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q10",
+        "question": "Czy w kontrolkach WPF można stosować efekty graficzne np. rozmywanie tekstu?",
+        "answers": [
+            "Tak, ale tylko gdy jest wspierany przez DirectX",
+            "Nie, programista może sam dodać takie mechanizmy",
+            "Tak, WPF oferuje takie możliwości standardowo"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q11",
+        "question": "Czy kontrolka TextBox pozwala na wyświetlanie i edycję tekstu wielolinijkowego?",
+        "answers": [
+            "Można tylko wyświetlać tekst wielolinijkowy, bez edycji",
+            "Można tylko edytować i wyświetlać tekst i tylko w jednej linii",
+            "Można wyświetlać i edytować tekst, po ustawieniu wymaganych właściwości kontrolki"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q12",
+        "question": "Jak nazywa się okno dialogowe służące do wyboru pliku do odczytu?",
+        "answers": [
+            "WindowOpenFile",
+            "OpenFileDialog",
+            "OpenFileWindow"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q13",
+        "question": "Która klasa pozwala odczytywać strumień bajtów w postaci znaków tekstowych np. z pliku?",
+        "answers": [
+            "FileReader",
+            "StringReader",
+            "StreamReader"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q14",
+        "question": "Które polecenie otwiera istniejący plik tekstowy do odczytu?",
+        "answers": [
+            "TextFile.Open(..)",
+            "System.OpenFile(..)",
+            "File.OpenText(..)"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q15",
+        "question": "Jak nazywa się okno dialogowe służące do wyboru pliku do odczytu?",
+        "answers": [
+            "WindowOpenFile",
+            "OpenFileDialog",
+            "OpenFileWindow"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q16",
+        "question": "Czy można dokonać rotacji o zadany kąt kontrolki za pomocą mechanizmów WPF?",
+        "answers": [
+            "Nie, standardowo nie można, wymaga to dodania własnego kodu realizującego rotację",
+            "Tak, ale trzeba zaimplementować interfejs RotateTransform",
+            "Tak, za pomocą zmiany wartości atrybutu RotateTransform"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q17",
+        "question": "Jak nazywa się atrybut sterujący przezroczystością komponentów WPF?",
+        "answers": [
+            "Opacity",
+            "Transparency",
+            "VisibleValue"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q18",
+        "question": "Jak nazywa się typ kolekcji pozwalający na automatyczną prezentację zmian w danych w tabeli?",
+        "answers": [
+            "ModifyCollection",
+            "ObservableCollection",
+            "ActualDataCollection"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q19",
+        "question": "Jak nazywa się klasa reprezentująca okna w technologii WPF?",
+        "answers": [
+            "Window",
+            "Frame",
+            "MainWindow"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q20",
+        "question": "Jak nazywa się właściwość obiektu okna w WPF przechowująca główne dane dla pól okna?",
+        "answers": [
+            "DataWindow",
+            "DataSource",
+            "DataContext"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q21",
+        "question": "Jak nazywa się komponent tabeli w WPF?",
+        "answers": [
+            "DataTable",
+            "DataGrid",
+            "TablePanel"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q22",
+        "question": "Jak nazywa się element graficzny WPF reprezentujący tekst opisu?",
+        "answers": [
+            "Title",
+            "Label",
+            "Description"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q23",
+        "question": "Która metoda usuwa wybrany element z kolekcji?",
+        "answers": [
+            "Remove",
+            "Delete",
+            "Drop"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q24",
+        "question": "Która metoda dodaje nowy element do kolekcji?",
+        "answers": [
+            "Add",
+            "Insert",
+            "Set"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q25",
+        "question": "Która klasa pozwala na zapis danych do pliku XML?",
+        "answers": [
+            "XmlWriter",
+            "XmlSerializer",
+            "XMLFile"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q26",
+        "question": "Czy jest możliwy bezpośredni zapis do pliku XML kolekcji typów złożonych?",
+        "answers": [
+            "Tak, można zapisać kolekcję typów złożonych do pliku XML",
+            "Nie, można zapisywać tylko pojedyncze obiekty do pliku XML",
+            "Tak, ale tylko gdy każdy obiekt kolekcji zostanie zapisany osobno"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q27",
+        "question": "Jak nazywa się panel WPF pozwalający na tabelaryczny układ elementów okna?",
+        "answers": [
+            "TableLayout",
+            "GridTemplate",
+            "Grid"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q28",
+        "question": "Czy jest możliwe wiązanie komponentów WPF do zmiennych zdefiniowanych w obiekcie okna?",
+        "answers": [
+            "Tak, ale jeżeli są publiczną właściwością",
+            "Nie, można wiązać jedynie do obiektów zapisanych w kontekście",
+            "Tak, jeżeli zostały wcześniej zadeklarowane"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q29",
+        "question": "Jak nazywa się typ reprezentujący połączenie do bazy danych?",
+        "answers": [
+            "DataConnection",
+            "SQLConnection",
+            "DatabaseConnection"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q30",
+        "question": "Który typ wiązania pozwala na połączenie kontrolki WPF np. z kolekcją zdefiniowaną w klasie okna?",
+        "answers": [
+            "DataContext",
+            "ContextElement",
+            "ElementName"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q31",
+        "question": "Która metoda pozwala na wyczyszczenie zawartości kolekcji?",
+        "answers": [
+            "kolekcja.Clear()",
+            "kolekcja.RemoveAll()",
+            "kolekcja.AllClear()"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q32",
+        "question": "Który komponent WPF pozwala na bezpośrednie wyświetlenie obrazu?",
+        "answers": [
+            "Image",
+            "Display",
+            "Panel"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q33",
+        "question": "W jaki sposób można wyświetlić dowolną zawartość w kolumnie tabeli DataGrid?",
+        "answers": [
+            "Zastosować mechanizm auto generowania tabeli, który sam rozpozna zawartość",
+            "Umieszczając wymaganą zawartość bezpośrednio w komórce w tabeli",
+            "Używając kolumny typu DataGridTemplateColumn"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q34",
+        "question": "Co oznacza skrót DAL?",
+        "answers": [
+            "Data Access Layer",
+            "Data Access Link",
+            "Data Auto Link"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q35",
+        "question": "W jakim celu stosowane są komponenty typu DAL?",
+        "answers": [
+            "Oddzielenia logiki dostępu do bazy danych od logiki aplikacji",
+            "Przyspieszenia operacji na bazie danych",
+            "Ułatwienia procesu konfiguracji i tworzenia nowych obiektów"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q36",
+        "question": "Jak nazywa się klasa reprezentująca polecenie SQL?",
+        "answers": [
+            "SQLSelect",
+            "SQLOperation",
+            "SQLCommand"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": "q37",
+        "question": "W której warstwie ADO .NET do pracy z danymi, domyślnie używany jest komponent DataSet?",
+        "answers": [
+            "Warstwie bezpołączeniowej",
+            "Warstwie połączeniowej",
+            "Modelu opartym na Entity Framework"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": "q38",
+        "question": "Który model/tryb ADO .NET pozwala pracować bezpośrednio z bazą za pomocą poleceń SQL?",
+        "answers": [
+            "Model oparty na warstwie bezpołączeniowej",
+            "Model oparty na warstwie połączeniowej",
+            "Model oparty na Entity Framework"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q39",
+        "question": "Która klasa pozwala na odczyt wierszy danych z wyniku zapytania wczytanego z bazy danych?",
+        "answers": [
+            "DatabaseReader",
+            "SQLDataReader",
+            "RowDataReader"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": "q40",
+        "question": "Która klasa pozwala zaprojektować własny sposób wyświetlania danych w komórce tabeli?",
+        "answers": [
+            "DataTemplate",
+            "DataRenderer",
+            "DataModel"
+        ],
+        "correctAnswer": 0
+    }
+]
