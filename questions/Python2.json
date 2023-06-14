@@ -1,0 +1,388 @@
+[
+  [
+    {
+      "id": "q1",
+      "question": "Czym charakteryzują się operacje morfologiczne ?  ",
+      "answers": [
+        "Operacja jest przeprowadzana gdy element strukturalny nie jest zgodny z otoczeniem punktu ",
+        "Operacja jest przeprowadzane zawsze",
+        "Operacja jest przeprowadzana gdy element strukturalny jest zgodny z otoczeniem punktu "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q2",
+      "question": "Na czym polega operacja erozji?",
+      "answers": [
+        "Nie ma wpływu na kształt obiektów",
+        "Na pogrubieniu obiektów",
+        "Na redukcji konturów obiektów"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q3",
+      "question": "Na czym polega operacja dylatacji?",
+      "answers": [
+        "Nie ma wpływu na kształt obiektów",
+        "Na pogrubieniu obiektów",
+        "Na redukcji konturów obiektów"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q4",
+      "question": "Do czego służy operacja otwarcia?",
+      "answers": [
+        "Usuwa drobne obiekty i drobne szczegóły",
+        "Pogrubia obiekty na obrazie",
+        "Wypełnia wąski wcięcia i zatoki"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q5",
+      "question": "Do czego służy operacja zamknięcia?",
+      "answers": [
+        "Usuwa drobne obiekty i drobne szczegóły",
+        "Wypełnia wąskie wcięcia i zatoki",
+        "Pogrubia obiekty na obrazie"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q6",
+      "question": "Na czym polega operacja otwarcia?",
+      "answers": [
+        "Kolejno wykonane erozja i dylatacja",
+        "Kolejno wykonane dwie operacje erozji",
+        "Kolejno wykonane dylatacja i erozja"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q7",
+      "question": "Na czym polega operacja zamknięcia?",
+      "answers": [
+        "Kolejno wykonane erozja i dylatacja",
+        "Kolejno wykonane dwie operacje dylatacji",
+        "Kolejno wykonane dylatacja i erozja"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q8",
+      "question": "Która operacja powoduje znaczące powiększenie powierzchni obiektu? ",
+      "answers": ["Zamknięcie", "Dylatacja ", "Otwarcie "
+    ],
+      "correctAnswer":1
+    },
+    {
+      "id": "q9",
+      "question": "Na czym polega operacja gradientu morfologicznego ?  ",
+      "answers": [
+        "Różnica między obrazem po dylatacji i obrazem po erozji  ",
+        "Różnica między źródłowym obrazem i obrazem po dylatacji ",
+        "Różnica między obrazem po dylatacji i obrazem źródłowym "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q10",
+      "question": "Jaki jest efekt działania operacji gradientu morfologicznego ? ",
+      "answers": [
+        "Detekcja krawędzi obiektów",
+        "Pogrubienie konturu obiektów  ",
+        "Zwiększenie powierzchni obiektu"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q11",
+      "question": "Do czego służy transformata Fouriera ? ",
+      "answers": [
+        "Do analizy sygnału w dziedzinie czasu ",
+        "Do analizy sygnału w dziedzinie częstotliwości ",
+        "Do analizy sygnału w dziedzinie przestrzennej "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q13",
+      "question": "Jakiego przekształcenia dokonuje transformata Fouriera ? ",
+      "answers": [
+        "Z dziedziny czasu do dziedziny częstotliwości ",
+        "Z dziedziny częstotliwości do dziedziny czasu ",
+        "Z dziedziny czasu do dziedziny przestrzennej "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q14",
+      "question": "Jak działa transformata Fouriera dla obrazów cyfrowych ? ",
+      "answers": [
+        "Jako iloczyn transformat 1D w dwóch kierunkach ",
+        "Jako suma transformat 1D w dwóch kierunkach ",
+        "Jako złożenie transformat 1D w dwóch kierunkach "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q15",
+      "question": "Jakie częstotliwości wykrywa transformata Fouriera ? ",
+      "answers": [
+        "Niskie   ",
+        "Wysokie  ",
+        "Niskie i wysokie "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q16",
+      "question": "Co to są F-obrazy  ?  ",
+      "answers": [
+        "Obrazy uzyskane w wyniku działania transformaty Fouriera 2D ",
+        "Obrazy uzyskane w wyniku działania transformaty Fouriera 1D ",
+        "Obrazy uzyskane w wyniku działania odwrotnej transformaty Fouriera 2D "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q17",
+      "question": "Jak działa transformata Fouriera ? ",
+      "answers": [
+        "Iloczyn sum krok po kroku sygnału i funkcji cosinus i sinus ",
+        "Suma iloczynów krok po kroku sygnału i funkcji cosinus i sinus ",
+        "Suma ilorazów krok po kroku sygnału i funkcji cosinus i sinus "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q18",
+      "question": "Jakie funkcje są wykorzystywane w transformacie Fouriera ?  ",
+      "answers": [
+        "Cosinus ",
+        "Cosinus i sinus ",
+        "Sinus "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q19",
+      "question": "Czy jest możliwe dobranie jednej wielkości maski filtra do wszystkich analizowanych obrazów ? ",
+      "answers": [
+        "Nie, dla każdego obrazu może być konieczne dobranie konkretnej wartości ",
+        "Tak, ale tylko dla obrazów generowanych sztucznie",
+        "Tak, można dobrać do wszystkich "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q20",
+      "question": "Jaki częstotliwości „przepuszcza” filtr dolnoprzepustowy ?  ",
+      "answers": [
+        "Wysokie ",
+        "Niskie  ",
+        "Średnie "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q21",
+      "question": "Jakie częstotliwości (po tr. Fouriera) reprezentuje krawędź na obrazie (wybierz właściwe) ?   ",
+      "answers": [
+        "Zależnie od kierunku (niskie lub wysokie) ",
+        "Wysokie ",
+        "Niskie"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q22",
+      "question": "Na czym polega segmentacja obrazu ?  ",
+      "answers": [
+        "Na podziale obrazu na części o ustalonej wielkości ",
+        "Na podziale obrazu na fragmenty odpowiadające poszczególnym obiektom ",
+        "Na podziale obrazu na poszczególne kolory   "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q23",
+      "question": "Na czym polega proces etykietyzacji obiektów ?  ",
+      "answers": [
+        "Na nadaniu nazw wszystkim obiektom na obrazie  ",
+        "Na przypisaniu etykiet grupom pikseli stanowiącym te same rejony  ",
+        "Na nadaniu kolejnych etykiet każdemu pikselowi z osobna    "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q24",
+      "question": "W jaki (najłatwiejszy) sposób rozdzielić obraz kolorowy na składowe ?   ",
+      "answers": [
+        "Poprzez wskazanie wartości 1 wymiaru  ",
+        "Poprzez wskazanie wartości 2 wymiaru  ",
+        "Poprzez wskazanie wartości 3 wymiaru  "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q25",
+      "question": "Na czym polega analiza obrazu ?   ",
+      "answers": [
+        "Na wydobyciu istotnych informacji z obrazu    ",
+        "Na poprawie jakości obrazu    ",
+        "Na wyeliminowaniu zakłóceń    "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q26",
+      "question": "Na czym polega analiza ilościowa obrazu ?  ",
+      "answers": [
+        "Na ustaleniu liczby pikseli na obrazie w różnych kolorach i ich pogrupowaniu   ",
+        "Na ustaleniu wartości liczbowych związanych z konkretną informacją na obrazie  ",
+        "Na określeniu w jakim stopniu obraz nie zawiera zakłóceń   "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q27",
+      "question": "Która funkcja pakietu OpenCV służy do łączenia obrazów składowych w obraz kolorowy ?  ",
+      "answers": [
+        "cv2.merge(..)   ",
+        "cv2.sum(…)  ",
+        "cv2.add(…)   "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q28",
+      "question": "Która funkcja pakietu OpenCV służy do tworzenia elementów strukturalnych ?  ",
+      "answers": [
+        "cv2.getSE(…)    ",
+        "cv2.getStructuringElement(…)    ",
+        "cv2.createElement(…)    "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q29",
+      "question": "Która funkcja OpenCV służy do etykietyzacji/wyznaczania konturów obiektów na obrazie ?    ",
+      "answers": [
+        "cv2.findContours(…)  ",
+        "cv2.findObjects(…)   ",
+        "cv2.findObjectsContours(…)  "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q30",
+      "question": "Na czym polega analiza jakościowa obrazu ?    ",
+      "answers": [
+        "Pozwala ustalić ogólnie np. czy obraz jest dobry czy zły ",
+        "Pozwala ustalić parametry liczbowe obrazu i ustalić dokładnie jakość   ",
+        "Pozwala dokładnie ocenić jakość przetwarzania obrazu i jego wpływ na analizę   "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q31",
+      "question": "Czy przetwarzanie obrazu jest potrzebne przez analizą obrazu (wybierz właściwe) ?  ",
+      "answers": [
+        "To zależy od metody analizy obrazu    ",
+        "Raczej nie, obrazy zazwyczaj są dobrej jakości  ",
+        "Najczęściej tak, pomaga poprawić jakość obrazu   "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q32",
+      "question": "Jaka funkcja OpenCV służy do wyznaczania momentów bezwładności ?  ",
+      "answers": [
+        "cv2.moments(…)    ",
+        "cv2.findMoments(…)   ",
+        "cv2.getMoments(…)   "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q33",
+      "question": "Jakie polecenie pakietu matplotlib służy do generowania okna np. z obrazami ?  ",
+      "answers": [
+        "window(…)     ",
+        "figure(…)    ",
+        "show(…)     "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q34",
+      "question": "Jaka funkcja OpenCV pozwala sprawdzić czy punkt znajduje się wewnątrz konturu ?  ",
+      "answers": [
+        "cv2.moments(…)   ",
+        "cv2.findContours(…)  ",
+        "cv2.pointPolygonTest(…)  "
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q35",
+      "question": "Jakie polecenie przerywa działanie bloku kodu np. pętli ?  ",
+      "answers": [
+        "break      ",
+        "end   ",
+        "stop     "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q36",
+      "question": "Co to jest centroid ?   ",
+      "answers": [
+        "Środek geometryczny obiektu na obrazie  ",
+        "Środek ciężkości obiektu na obrazie ",
+        "Centralny punkt obiektu na obrazie   "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q37",
+      "question": "Co to są cechy obrazu (w procesie analizy obrazów) ? ",
+      "answers": [
+        "Wybrane wielkości charakteryzujące informacje na obrazie      ",
+        "Najbardziej widoczne cechy charakterystyczne danego obrazu   ",
+        "Wybrane krawędzie i piksele na obrazie     "
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "q38",
+      "question": "Jak jest najważniejsza własność współczynników kształtu ? ",
+      "answers": [
+        "Jak najszybsze wyznaczanie parametrów kształtu figury     ",
+        "Jak najlepsze różnicowanie ze względu na kształt figury     ",
+        "Jak najdokładniejsze wyznaczanie parametrów figury  "
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q39",
+      "question": "Który współczynnik jest przykładem współczynnika kształtu ? ",
+      "answers": [
+        "Średnice Fereta ",
+        "Momenty bezwładności ",
+        "Długość krawędzi obiektu"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  [
+    {
+      "question": "",
+      "answers": [],
+      "correctAnswer": 0
+    }
+  ]
+]
