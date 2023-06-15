@@ -48,7 +48,7 @@
                 "Window",
                 "MainWindow"
             ],
-            "correctAnswer": 1
+            "correctAnswer": 2
         },
         {
             "id": "q6",
@@ -248,7 +248,7 @@
                 "XmlSerializer",
                 "XMLFile"
             ],
-            "correctAnswer": 1
+            "correctAnswer": 0
         },
         {
             "id": "q26",
@@ -298,7 +298,7 @@
                 "ContextElement",
                 "ElementName"
             ],
-            "correctAnswer": 2
+            "correctAnswer": 0
         },
         {
             "id": "q31",
@@ -328,7 +328,7 @@
                 "Umieszczając wymaganą zawartość bezpośrednio w komórce w tabeli",
                 "Używając kolumny typu DataGridTemplateColumn"
             ],
-            "correctAnswer": 0
+            "correctAnswer": 2
         },
         {
             "id": "q34",
